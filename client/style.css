@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#app,
+#app .error-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .app-container {
+    line-height: 0;
+}
+
+#app .error-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#app .heading,
+#app .message {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    line-height: initial;
+}
+
+#app .heading {
+    top: 0;
+}
+
+#app .message {
+    bottom: 0;
+}
+
+#app .error {
+    max-width: 60rem;
+    font-family: monospace;
+    line-height: initial;
+}
+
+#app .error .title,
+#app .error .body {
+    display: block;
+    padding: 1.2rem 1.5rem;
+}
+
+#app .error .title {
+    background: #D23232;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+#app .error .body {
+    background: #FFD9D9;
+    line-height: 2.2rem;
+}
